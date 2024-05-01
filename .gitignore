@@ -1,4 +1,9 @@
-/alacritty/alacritty.toml.save
-/hypr/hyprland.conf.save
-/hypr/hyprland.conf.save.1
-/rofi/config.rasi.save
+# Alacritty
+.alacritty/alacritty.toml.save
+
+# Hyprland
+.hypr/hyprland.conf.save
+.hypr/hyprland.conf.save.1
+
+# Rofi
+.rofi/config.rasi.save
