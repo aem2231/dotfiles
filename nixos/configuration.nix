@@ -33,8 +33,6 @@
   #services.xserver.enable = true;
 
   # Enable display manager
-  #services.displayManager.sddm.enable = true;
-
   services.greetd = {
     enable = true;
     settings = {
@@ -43,7 +41,7 @@
         --time \
         --asterisks \
         --user-menu \
-        --cmd hyprland
+        --cmd Hyprland
     '';
     };
   };
@@ -51,6 +49,9 @@
   environment.etc."greetd/environments".text = ''
     hyprland
   '';
+
+  #Enable gpu drivers
+  services.xserver.videoDrivers = ["amdgpu"];
 
   # Enable the hyprland compositor
   programs.hyprland.enable = true;
@@ -91,29 +92,33 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
-  #Steam
+  #Steam, also enables OpenGL by defualt 
   programs.steam = {
     enable = true;
     #package = ;
-    #gamescopeSession.enable = ;
-    #gamescopeSession.args = ;
-    #gamescopeSession.env = ;
-    #gamescopeSession = ;
-    #emotePlay.openFirewall = ;
-    #dedicatedServer.openFirewall = ;
+    gamescopeSession.enable = true;
   };
+  
+  #Enable gamemode daemon
+  programs.gamemode.enable = true;
+
+  # Automatic Garbage Collection
+  nix.gc = {
+             automatic = true;
+             dates = "weekly";
+             options = "--delete-older-than 7d";
+           };
 
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
+
     # Desktop Applications
     firefox
     thunderbird
     alacritty
     kitty
-    #discord
     vesktop
     rofi-wayland
-    #spotify
     spicetify-cli
     swww # wallpaper daemon
     networkmanagerapplet
@@ -138,6 +143,8 @@
     #Gaming
     lutris
     protonup-qt
+    lunar-client
+    superTuxKart
 
     # Utilities
     vlc
@@ -154,6 +161,7 @@
     wcalc
     playerctl
     pamixer    
+    linuxKernel.packages.linux_zen.xpadneo    
 
     # *fetch
     neofetch
