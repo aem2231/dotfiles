@@ -6,13 +6,13 @@
 
 Credit:
     
-[Alacritty](https://github.com/catppuccin/alacritty)
+[Alacritty](https://github.com/sameemul-haque/dotfiles/tree/mocha)
 
 [Dunst](https://github.com/sameemul-haque/dotfiles/tree/mocha)
 
 [Fast Fetch](https://github.com/sameemul-haque/dotfiles/tree/mocha)
 
-[rofi](https://github.com/sameemul-haque/dotfiles/tree/mocha)
+[rofi](https://github.com/catppuccin/rofi)
 
 [Waybar](https://github.com/sameemul-haque/dotfiles/tree/mocha)
 
