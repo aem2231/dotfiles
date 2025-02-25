@@ -1,0 +1,7 @@
+[manager]
+sort_by = "alphabetical"
+sort_dir_first = true
+
+[preview]
+wrap = "no"
+
