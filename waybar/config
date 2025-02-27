@@ -79,7 +79,7 @@
     "format-muted": "  muted",
     "format-icons": {
       "headphone": "",
-      "default": [" ", " ", " "],
+      "default": [" ", " ", "  "],
     },
     "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
   },
@@ -88,9 +88,9 @@
     "tooltip": false,
   },
   "network": {
-    "format-wifi": "  {essid}",
-    "format-ethernet": "  {essid}",
-    "format-disconnected": "󰤯  ",
+    "format-wifi": "  {essid}",
+    "format-ethernet": "  {essid}",
+    "format-disconnected": "󰤯  ",
     "tooltip": true,
     "tooltip-format": "SSID: {essid} ({signalStrength})\rIP: {ipaddr}\rInterface: {ifname}\rBandwidth Up: {bandwidthUpBits}\rBandwidth Down: {bandwidthDownBits}",
     "interval": 1
