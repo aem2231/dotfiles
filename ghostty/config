@@ -25,3 +25,5 @@ background-opacity = 0.85
 background-blur = 20
 
 window-padding-y = 4,4
+
+font-family = FiraCode Nerd Font
