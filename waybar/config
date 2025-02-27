@@ -67,7 +67,7 @@
     "format": " {:L%a %d %b}",
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": " {usage}%",
     "tooltip": true,
     "interval": 1,
   },
