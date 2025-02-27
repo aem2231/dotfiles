@@ -1,8 +1,8 @@
 * {
   min-height: 0;
   min-width: 0;
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 12px;
+  font-family: 'nerd-fonts.FiraCode';
+  font-size: 0.97em;
   font-weight: 400;
 }
 
@@ -50,6 +50,7 @@ window#waybar {
 #custom-spotify,
 #custom-notification,
 #network,
+#battery,
 #cpu,
 #tray,
 #memory,
@@ -77,6 +78,15 @@ window#waybar {
 
 window#waybar.empty #window {
   background-color: transparent;
+}
+
+#network {
+  color: #a6e3a1;
+}
+
+#network.disabled,
+#network.disconnected {
+  color: #6c7086;
 }
 
 #cpu {
@@ -109,6 +119,10 @@ window#waybar.empty #window {
 
 #custom-logo {
   color: #89b4fa;
+}
+
+#battery {
+  color: #f5e0dc;
 }
 
 #custom-power {

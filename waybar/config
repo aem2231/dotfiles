@@ -13,6 +13,7 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["mpris"],
   "modules-right": [
+    "network",
     "cpu",
     "memory",
     "pulseaudio",
@@ -20,6 +21,7 @@
     "clock#simpleclock",
     "tray",
     "custom/notification",
+    "battery",
     "custom/power",
   ],
   "custom/spotify": {
@@ -84,6 +86,18 @@
   "custom/sep": {
     "format": "|",
     "tooltip": false,
+  },
+  "network": {
+    "format-wifi": "   {essid}",
+    "format-ethernet": "  {essid}",
+    "format-disconnected": "󰤯  ",
+    "tooltip": true,
+    "tooltip-format": "SSID: {essid} ({signalStrength})\rIP: {ipaddr}\rInterface: {ifname}\rBandwidth Up: {bandwidthUpBits}\rBandwidth Down: {bandwidthDownBits}",
+    "interval": 1
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
   "custom/power": {
     "tooltip": true,
