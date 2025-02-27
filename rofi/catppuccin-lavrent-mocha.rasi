@@ -1,9 +1,3 @@
-/**
- * Catppuccin Mocha theme
- * Color palette copied from https://catppuccin.com/palette
- * https://github.com/hiimsergey/rofi-catppuccin
- */
-
 * {
     mantle: #181825;
     base: #1e1e2e;
@@ -21,8 +15,8 @@
 }
 
 window {
-    height: 250;
-    width: 450;
+    height: 14em;
+    width: 25em;
 
     border: 2;
     border-radius: 10;
@@ -46,7 +40,7 @@ message {
 }
 
 listview {
-    padding: 8;
+    padding: 0.4em;
     border-radius: 0 0 10 10;
     border: 2 2 2 2;
     border-color: @mantle;
