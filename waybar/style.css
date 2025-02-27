@@ -1,7 +1,7 @@
 * {
   min-height: 0;
   min-width: 0;
-  font-family: 'nerd-fonts.FiraCode';
+  font-family: 'FiraCode Nerd Font';
   font-size: 0.97em;
   font-weight: 400;
 }
@@ -99,6 +99,7 @@ window#waybar.empty #window {
 
 #clock {
   color: #74c7ec;
+  padding-top: 5px;
 }
 
 #clock.simpleclock {
