@@ -3,15 +3,14 @@
   min-width: 0;
   font-family: 'FiraCode Nerd Font';
   font-size: 0.97em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
   background-color: #11111b;
-  border-radius: 20px;
-  margin: 0px;
+  border-radius: 10px;
   padding: 20px 15px;
 }
 
@@ -24,22 +23,18 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 80px;
   /* background-color: #181825; */
-  background-color: #1e1e2e;
   color: #cdd6f4;
 }
 
 #workspaces button:hover {
   color: #1e1e2e;
-  background-color: #cdd6f4;
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
   color: #89b4fa;
 }
 
 #workspaces button.urgent {
-  background-color: #1e1e2e;
   color: #f38ba8;
 }
 
@@ -60,7 +55,6 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 20px;
   /* background-color: #181825; */
-  background-color: #1e1e2e;
 }
 
 #mpris.playing {
@@ -99,7 +93,7 @@ window#waybar.empty #window {
 
 #clock {
   color: #74c7ec;
-  padding-top: 5px;
+  padding-top: 0.38em;
 }
 
 #clock.simpleclock {
@@ -128,10 +122,7 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
-  padding-right: 12.5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  margin-right: 5px;
+  padding-right: 1.2em;
 }
 
 tooltip {
