@@ -100,11 +100,7 @@
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
   "custom/power": {
-    "tooltip": true,
-    "tooltip-format": "RMB  shutdown\nLMB  suspend\nMMB  reboot",
-    "on-click-right": "shutdown now",
-    "on-click-left": "systemctl suspend",
-    "on-click-middle": "reboot",
+    "on-click": "rofi -show power-menu",
     "format": "⏻",
   },
 }
