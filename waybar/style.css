@@ -19,15 +19,14 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0.4rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 80px;
-  /* background-color: #181825; */
+  padding: 0.4rem 0.3rem;
+  margin: 0.4rem 0.15rem;
+  border-radius: 7px;
   color: #cdd6f4;
 }
 
 #workspaces button:hover {
-  color: #1e1e2e;
+  color: #313244;
 }
 
 #workspaces button.active {
