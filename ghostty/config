@@ -23,7 +23,7 @@ selection-foreground = cdd6f4
 
 background-opacity = 0.85
 background-blur = 20
-
+font-size = 14
 window-padding-y = 4,4
 
 font-family = FiraCode Nerd Font
